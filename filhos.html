@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filhos</title>
+</head>
+
+<body>
+    <h1>Gerenciamento de Filhos</h1>
+    <button onclick="voltar()">Voltar</button>
+    <button onclick="logout()">Sair</button>
+    <hr>
+  
+        <!-- 1) FORMULÁRIO -->
+        <label>Responsavel</label><br>
+        <select id="responsavel_id">
+            <option value="">Selecione o responsavel</option>
+        </select>
+        <hr>
+
+        <select id="tipo">
+            <option value="">Selecione o tipo</option>
+            <option value="Celular">Celular</option>
+            <option value="Tablet">Tablet</option>
+            <option value="Notebook">Notebook</option>
+        </select>
+        <hr>
+
+        <script src="api.js"></script>
+        <script src="sessao.js"></script>
+        <script src="filhos.js"></script>
+    </body>
+
+    </html>

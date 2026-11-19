@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Responsável</title>
+</head>
+
+<body>
+    <h1>Gerenciamento de Responsável</h1>
+    <button onclick="voltar()">Voltar</button>
+    <button onclick="logout()">Sair</button>
+    <hr>
+    <!-- 1) FORMULÁRIO -->
+    <label>Nome</label><br>
+    <input type="text" id="nome"><br><br>
+    <label>E-mail</label><br>
+    <input type="email" id="email"><br><br>
+    <button onclick="cadastrar()">Cadastrar</button>
+    <hr>
+    <!-- 2) BUSCA -->
+    <input type="text" id="busca" placeholder="Digite o nome">
+    <button onclick="pesquisar()">Pesquisar</button>
+    <!-- 3) TABELA (o JavaScript preenche o tbody) -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tabela"></tbody>
+    </table>
+    <!-- 4) SCRIPTS: sempre no fim do body, nesta ordem -->
+    <script src="api.js"></script>
+    <script src="sessao.js"></script>
+    <script src="login.js"></script>
+</body>
+
+</html
