@@ -1,0 +1,13 @@
+<h2 id="usuario"></h2>
+<button onclick="abrir('responsavel.html')">Responsável</button>
+<button onclick="abrir('filhos.html')">Filhos</button>
+<button onclick="abrir('agendamentos.html')">Agendamentos</button>
+<button onclick="logout()">Sair</button>
+<script src="sessao.js"></script>
+<script>
+  document.getElementById("usuario").innerHTML =
+    "Bem-vindo(a), " + usuario.nome;
+  function abrir(pagina) {
+    window.location.href = pagina;
+  }
+</script>
